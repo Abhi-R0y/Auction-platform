@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 Global Styles */
+body {
+  @apply bg-gray-100 text-gray-900 transition-all duration-300;
+}
+
+/* 🌙 Dark Mode */
+[data-theme="dark"] body {
+  @apply bg-gray-900 text-gray-100;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-blue-700 active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-gray-600 text-white rounded-lg shadow-md transition duration-300 ease-in-out hover:bg-gray-700 active:scale-95;
+}
+
+/* 🏡 Navbar Styling */
+.navbar {
+  @apply bg-blue-600 text-white p-4 shadow-lg;
+}
+
+/* 🌓 Dark Mode Toggle Button */
+.dark-mode-toggle {
+  @apply px-3 py-2 border border-white rounded-lg text-sm transition-all duration-300;
+}
+
+[data-theme="dark"] .dark-mode-toggle {
+  @apply bg-gray-800 text-white border-gray-400;
+}
+
+/* 📱 Responsive Menu */
+.mobile-menu {
+  @apply block md:hidden absolute top-16 left-0 w-full bg-blue-600 text-white shadow-lg;
+}
+
+[data-theme="dark"] .mobile-menu {
+  @apply bg-gray-800;
+}
